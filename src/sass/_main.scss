@@ -295,25 +295,25 @@ h2 {
 
     .top-row {
       background-color: white;
+      height: 70px;
+    }
 
-      .content {
-        display: flex;
+    .mid-row {
+      .site-info-icon {
         height: 70px;
-        justify-content: flex-end;
-        transform: translateY(67px);
+        width: auto;
+      }
 
-        .info {
-          height: 100%;
-          font-weight: bold;
-          font-size: 1.2rem;
-          padding: 8px 0;
-          text-align: right;
+      .site-info-text {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 8px 0;
+        text-align: right;
 
-          p {
-            color: #111;
-            line-height: normal;
-            margin: 4px 0;
-          }
+        p {
+          color: #111;
+          line-height: normal;
+          margin: 4px 0;
         }
       }
     }
