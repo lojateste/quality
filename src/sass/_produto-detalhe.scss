@@ -1,0 +1,132 @@
+@import 'vendor/owl.theme.custom.scss';
+@import 'vendor/owl.carousel.scss';
+
+.produto-detalhe-page {
+  .share-buttons {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    right: 1rem;
+    z-index: 5;
+
+    ul li {
+      margin: 7px 7px 0 0 !important;
+    }
+  }
+
+  .product-details {
+    position: relative;
+    margin-top: 3rem;
+
+    .product-images {
+      position: relative;
+
+      .btn-fav {
+        @extend .orange-background;
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+      }
+    }
+
+    .product-description {
+      position: relative;
+
+      > h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+
+        & + h2 {
+          margin-top: 0.7rem;
+          font-size: 0.9rem;
+          color: #888;
+        }
+      }
+    }
+
+    .product-rating {
+      font-size: 1.5rem;
+      color: #f1c40f;
+      margin-bottom: 1rem;
+    }
+
+    .product-payment {
+      text-align: center;
+      margin: 1rem 0;
+
+      .product-price {
+        font-size: 2.5rem;
+      }
+
+      .product-old-price {
+        color: #888;
+        text-decoration: line-through;
+      }
+
+      .product-discount {
+        color: red;
+      }
+
+      .btn-cart {
+        @extend .orange-background;
+        margin-top: 1rem;
+      }
+    }
+
+    .product-highlights {
+      li {
+        .collapsible-header {
+          .fa {
+            float: left;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .input-field {
+      margin: 3rem 0 2rem;
+      padding: 2rem 1rem 1px;
+      border-radius: 2px;
+      @extend .z-depth-2;
+
+      label {
+        left: 1rem;
+        top: 1rem;
+        transform: none;
+      }
+    }
+
+    .collapsible {
+      @extend .z-depth-2;
+      border-radius: 2px;
+      border: none;
+    }
+
+    .product-freight {
+      display: flex;
+      flex-wrap: wrap;
+      @extend .z-depth-2;
+      border-radius: 2px;
+      padding: 1rem;
+      margin: 2rem 0;
+
+      label {
+        color: #666;
+        font-size: 0.9rem;
+        flex: 1 0 100%;
+      }
+
+      input {
+        flex: 1 1 50%;
+        margin: 0 1rem 0 0;
+        height: auto;
+      }
+
+      .submit-freight {
+        padding: 0 1rem;
+        flex: 0 1 auto;
+      }
+    }
+  }
+}

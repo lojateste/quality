@@ -1,0 +1,227 @@
+@import 'vendor/owl.theme.custom.scss';
+@import 'vendor/owl.carousel.scss';
+
+.home-page {
+  .big-content-block {
+    @extend .grey-background;
+    padding: 2rem 0;
+
+    h3 {
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    form {
+      input[type=text] {
+        @extend .z-depth-1;
+        background-color: white;
+        padding: 0 1.5rem;
+        margin: 0;
+        width: calc(80% - 5rem);
+        height: 3rem;
+        margin-left: 10%;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+
+      button[type=submit] {
+        @extend .red;
+        width: 5rem;
+        transform: translateY(-1px);
+        padding: 0;
+        height: 3rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  ul.tabs {
+    li a {
+      color: #444 !important;
+    }
+
+    .indicator {
+      background-color: #444 !important;
+    }
+  }
+
+  .attractives {
+    margin-top: 3rem;
+
+    .attractive {
+      display: block;
+      min-height: 260px;
+      color: #444;
+      text-align: center;
+
+      .attractive-img {
+        @extend .red;
+        padding: 1rem;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+
+        &:after {
+          @extend .red;
+          content: '';
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-8px, -8px) rotate(45deg);
+        }
+      }
+
+      h3 {
+        font-size: 1.35rem;
+        font-weight: 500;
+      }
+
+      p {
+        color: #777;
+        font-size: 0.95rem;
+      }
+
+      strong {
+        color: #444;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .special-offers {
+    position: relative;
+
+    .owl-nav {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .5);
+
+      .owl-next,
+      .owl-prev {
+        @extend .red, .darken-1;
+        width: 3.5rem;
+        text-align: center;
+        line-height: 3.5rem;
+        color: white;
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-right: 1px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: -50px;
+        bottom: 0;
+        border-bottom: 50px solid rgba(0,0,0,0.5);
+        border-right: 50px solid transparent;
+      }
+
+      &:after {
+        content: 'Produtos em destaque';
+        padding-left: 1rem;
+        line-height: 3.5rem;
+        color: white;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .promotional-products {
+    @extend .row;
+
+    .product {
+      @extend .z-depth-2;
+      position: relative;
+      margin: 2rem 0.75rem 1rem;
+
+      .product-img {
+        background: no-repeat center;
+        background-size: cover;
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+
+      .timer {
+        @extend .z-depth-1;
+        @extend .red;
+        position: absolute;
+        border-radius: 2px;
+        line-height: 2rem;
+        padding: 0 1rem;
+        top: -1rem;
+        right: 2rem;
+        color: white;
+      }
+
+      .wrapper {
+        color: white;
+        padding: 1.5rem 1rem 1rem 45%;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          @extend .blue-gradient;
+          height: 100%;
+          width: 120%;
+          top: 0;
+          left: 34%;
+          z-index: -1;
+          transform: skewX(15deg);
+          position: absolute;
+        }
+
+        span {
+          line-height: 1.8rem;
+
+          strong {
+            font-size: 1.7rem;
+            font-weight: 400;
+            white-space: nowrap;
+          }
+        }
+
+        .product-title {
+          font-weight: bold;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+  @media #{$medium-and-up} {
+    .promotional-products {
+      .product {
+        display: inline-block;
+        width: 45%;
+        width: calc(50% - 1.5rem);
+      }
+    }
+  }
+  @media #{$extra-large-and-up} {
+    .promotional-products {
+      .product {
+        width: 30%;
+        width: calc(100% / 3 - 1.5rem);
+      }
+    }
+  }
+}

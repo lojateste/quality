@@ -1,0 +1,33 @@
+{
+  "name": "e-commerce-mpa",
+  "version": "1.0.0",
+  "description": "Template de front-end para loja virtual",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "template",
+    "html",
+    "sass",
+    "gulp",
+    "e-commerce",
+    "loja"
+  ],
+  "author": "Jonatan Lins <https://jonatanlins.github.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "bs-console-qrcode": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.100.2"
+  }
+}
